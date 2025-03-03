@@ -225,7 +225,8 @@ img {
 
 
 .info,
-.about{
+.about,
+.skills{
   background-color: var(--container-color);
   padding: 2rem 1.5rem;
   border-radius: 2rem;
@@ -327,6 +328,31 @@ margin-block: 1rem 2rem;
 
 /*===== SKILLS =====*/
 
+.skills__title{
+  font-size: var(--h2-font-size);
+}
+
+.skills__item{
+  width: 1.5rem;
+  transition: transform .4s;
+}
+
+.skills__item:hover{
+ transform: translateY(-.25rem);
+}
+
+.skills__items{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-block: 1.5rem;
+}
+
+.skills__description{
+  font-size: var(--small-font-size);
+}
+
 
 /*=============== BUTTON ===============*/
 .button{
@@ -351,7 +377,77 @@ margin-block: 1rem 2rem;
 
 /*=============== PROJECTS ===============*/
 
+.projects__card{
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
 
+.projects__image{
+  display: block;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects__img{
+  transition: transform .4s;
+}
+
+.projects__name{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.projects__description{
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.projects__skill{
+  width: 1rem;
+  transition: transform .4s;
+}
+
+.projects__skill:hover{
+  transform: translateY(-.25rem);
+}
+
+.projects__skills{
+  width: max-content;
+  height: 34px;
+  background-color: var(--black-color);
+  padding-inline: .75rem;
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  border-radius: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects__button{
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem ;
+  transition: color .4s;
+}
+
+.projects__button i{
+  font-size: 1.25rem;
+}
+
+.projects__button span{
+  font-weight: var(--font-medium);
+}
+
+.projects__button:hover{
+  color: var(--text-color);
+}
+
+.projects__card:hover .projects__img{
+  transform: scale(1.2);
+}
 /*=============== SERVICES ===============*/
 
 
