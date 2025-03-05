@@ -448,13 +448,124 @@ margin-block: 1rem 2rem;
 .projects__card:hover .projects__img{
   transform: scale(1.2);
 }
+
 /*=============== SERVICES ===============*/
+
+.services__card{
+  background-color: var(--container-color);
+  padding: 4rem 1.5rem 3.5rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.services__icon{
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.services__icon i{
+ font-size: 2.5rem;
+ position: relative;
+ z-index: var(--z-tooltip);
+}
+
+.services__circle{
+ width: 3rem;
+ height: 3rem;
+ background-color: var(--first-color);
+ border-radius: 50%;
+ position: absolute;
+ top: -1rem;
+ right: -1rem;
+ transition: transform .4s;
+}
+
+.services__name{
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.services__description{
+  color: var(--text-color);
+}
+
+.services__card:hover .services__circle{
+  transform: translate(.25rem, -.25rem);
+}
 
 
 /*=============== EXPERIENCE ===============*/
+.experience__container{
+  row-gap: 2rem;
+}
+
+.experience__card{
+  display: grid;
+}
+
+.experience__company{
+  font-size: var(--h2-font-size);
+}
+
+.experience__data{
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.experience__date{
+  display: block;
+  font-size: var(--smaller-font-size);
+  margin-bottom: 1rem ;
+}
+
+.experience__description{
+  color: var(--text-color);
+}
 
 
 /*=============== CONTACT ===============*/
+
+.contact__group,
+.contact__form{
+  gap:1rem
+}
+
+.contact__form{
+  position: relative;
+}
+
+.contact__input{
+  background-color: var(--container-color);
+  padding: 1.25rem;
+  border-radius: 4rem;
+  color: var(--white-color);
+}
+
+.contact__input::placeholder{
+  color: var(--text-color);
+}
+
+.contact__input:autofill{
+  transition: background-color 6000s, color 60;
+}
+
+.contact__area{
+  height: 10rem;
+  border-radius: 1.5rem;
+  resize: none;
+}
+
+.contact__button{
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.contact__message{
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--smaller-font-size);
+}
 
 
 /*=============== FOOTER ===============*/
