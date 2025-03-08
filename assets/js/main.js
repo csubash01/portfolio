@@ -1,11 +1,27 @@
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form')
   contactMessage = document.getElementById('contact-message')
-contst sendEmail = (e) =>{
-    e.preventDefault()
+const sendEmail = (e) =>{
+     e.preventDefault()
+ 
+     //serviceID - templateID - #form - publickey
+     emailjs.sendform('service_dmfoflt','template_92uq8','#contact-form','fMqbg3-jm_BqYdnTi')
 
-    //serviceID - templateID - #form - publickey
-    emailjs.sendform('','','','')
+    .then(() =>{
+      //show sent message
+      contactMessage.textContent = 'Message sent successfully ✅'
+
+      //Remove message after five seconds
+      setTimeout(() =>{
+        contactMessage.textContent = ''
+      }, 5000)
+
+      //clear input fields
+      contactForm.reset()
+    }, () =>{
+      //show error message
+      contactMessage.textContent = 'Message not sent (Service error) ❌'
+    })
 }
 contactForm.addEventListener('submit', sendEmail)
   
