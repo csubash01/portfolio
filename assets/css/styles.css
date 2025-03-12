@@ -835,4 +835,85 @@ margin-block: 1rem 2rem;
  .services__card{
   padding-block: 6rem 5rem;
  }
+
+ .services__icon i{
+  font-size: 3.5rem;
+ }
+
+ .services__circle{
+  width: 4rem;
+  height: 4rem;
+  right: -1.5rem;
+  top: -1.5rem;
+ }
+
+ .experience__container{
+  row-gap: 4rem;
+ }
+
+ .experience__card{
+  grid-template-columns: 350px 510px;
+  column-gap: 8rem;
+ }
+
+ .experience__company{
+  font-size: var(--h1-font-size);
+ }
+
+ .experience__data{
+  padding: 2rem;
+  border-radius: 2rem;
+ }
+
+ .contact__container{
+  grid-template-columns: 620px;
+ }
+
+ .contact__group{
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+ .contact__area{
+  height: 15rem;
+ }
+
+ .contact__button{
+  width: max-content;
+  justify-self: center;
+ }
+
+ .footer{
+  padding-top: 3rem;
+ }
+ .footer__links{
+  column-gap: 3rem;
+ }
+ .footer__copy{
+  margin-top: 7rem;
+ }
+}
+
+@media screen and (min-width: 1500px){
+  .nav{
+    width: max-content;
+    height: max-content;
+    padding: 2rem 1rem;
+    left: initial;
+    right: 3rem;
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+  }
+  .nav__list{
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
+
+  .footer{
+    padding-block: 3rem;
+  }
+
+  .scrollup{
+    right: 4rem;
+  }
 }
