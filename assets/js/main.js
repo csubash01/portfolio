@@ -5,7 +5,7 @@ const sendEmail = (e) =>{
      e.preventDefault()
  
      //serviceID - templateID - #form - publickey
-     emailjs.sendform('service_fryr5cx','template_92uq8ae','#contact-form','fMqbg3-jm_BqYdnTi')
+     emailjs.sendForm('service_fryr5cx','template_92uq8ae','#contact-form','fMqbg3-jm_BqYdnTi')
 
     .then(() =>{
       //show sent message
@@ -63,7 +63,7 @@ const sr = scrollReveal({
   origin: 'top',
   distance: '60px',
   duration: 2500,
-  delay: 400,
+  delay: 400
  // reset: true, //animations repeat
 })
 
