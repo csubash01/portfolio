@@ -269,6 +269,7 @@ img {
   height: 100%;
   justify-self: center;
   align-self: flex-end;
+  object-fit: cover;
 }
 
 .info__description{
@@ -321,10 +322,9 @@ img {
 
 .about__img{
   width: 100%;
-  height: 120%;
+  height: 100%;
   justify-self: center;
-  transform: translateY(-2.5rem);
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .about__note{
