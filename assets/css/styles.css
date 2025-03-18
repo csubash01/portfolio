@@ -194,10 +194,12 @@ img {
 }
 
 .perfil__img{
-  width: 250px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   justify-self: center;
-  align-self: flex-end;
+  align-self:center;
+  object-fit: cover;
 }
 
 .perfil__data{
@@ -255,7 +257,7 @@ img {
 
 .info__image{
   background: var(--conic-gradient);
-  height: 180px;
+  height: 170px;
   border-radius: 2rem;
   display: grid;
   margin-block: 1.5rem;
@@ -263,7 +265,8 @@ img {
 }
 
 .info__img{
-  width: 140px;
+  width:100%;
+  height: 100%;
   justify-self: center;
   align-self: flex-end;
 }
@@ -311,16 +314,17 @@ img {
 
 .about__image{
   background: var(--conic-gradient);
-  height: 180px;
   border-radius: 2rem;
   display: grid;
   overflow: hidden;
 }
 
 .about__img{
-  width: 250px;
+  width: 100%;
+  height: 120%;
   justify-self: center;
   transform: translateY(-2.5rem);
+  object-fit: fill;
 }
 
 .about__note{
@@ -716,6 +720,12 @@ margin-block: 1rem 2rem;
 
   .perfil{
     height: 100%;
+    
+  }
+
+  .perfil__img{
+    width: 100%;
+    height: 100%;
   }
 
   .projects__container,
@@ -778,7 +788,8 @@ margin-block: 1rem 2rem;
  }
 
  .perfil__img{
-  width: 450px;
+  width: 100%;
+  height: 100%;
  }
 
  .perfil__data{
@@ -807,6 +818,8 @@ margin-block: 1rem 2rem;
  }
 
  .about__img{
+  height: 100%;
+  width: 100%;
   transform: translateY(-1rem);
  }
 
