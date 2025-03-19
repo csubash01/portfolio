@@ -5,7 +5,7 @@ Home - Projects - Services - Experience - Contact
 
 ========== PERFIL ==========
 .perfil__name
-Xian <br> Gallers
+Subas> Tharu
 
 .button
 Projects
@@ -14,7 +14,7 @@ Services
 
 ========== INFO ==========
 .info__name
-Xian Gallers
+Subas tharu
 
 .info__description
 Passionate about creating and designing 
@@ -26,7 +26,7 @@ Download CV
 
 ========== ABOUT  ==========
 .about__name
-Xian Gallers - <b>Web Designer & Developer</b>
+Subas Tharu- <b>Web Designer & Developer</b>
 
 .about__description
 Located in Peru, I have several years of 
@@ -151,7 +151,7 @@ EmailJS team
 
 ========== FOOTER ==========
 .footer__logo
-Xian
+subasX
 
 .footer__links
 Home - Projects - Services
@@ -162,4 +162,4 @@ https://www.instagram.com/
 https://twitter.com/
 
 .footer__copy
-&#169; All Rights Reserved By Bedimcode
+&#169; All Rights Reserved By subas
