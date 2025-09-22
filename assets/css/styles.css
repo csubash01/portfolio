@@ -438,6 +438,7 @@ margin-block: 1rem 2rem;
   align-items: center;
   column-gap: .5rem ;
   transition: color .4s;
+  margin-right: 10px;
 }
 
 .projects__button i{
